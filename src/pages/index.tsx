@@ -1,6 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
 import type { NextPage } from "next";
 
+import { Carrousel } from "../components/Carrousel";
 import Hero from "../components/Hero";
 import TravelTypes from "../components/TravelTypes";
 
@@ -21,6 +22,10 @@ const Home: NextPage = () => {
         p={{ base: "1.5rem", md: "3.25rem" }}>
         <Text>Vamos nessa?</Text>
         <Text>Então escolha seu continente </Text>
+      </Box>
+
+      <Box p={{ base: 0, md: "5rem" }} margin="0 auto" maxWidth="1440px">
+        <Carrousel />
       </Box>
     </div>
   );
