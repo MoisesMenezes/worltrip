@@ -3,34 +3,41 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Box } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import Slide, { SlideProps } from "../Slide";
 
 export const Carrousel = () => {
+  const router = useRouter();
   const continents: SlideProps[] = [
     {
+      slug: "england",
       img: "/img/england.jpg",
       title: "Europa",
       subtitle: "o continente mais antigo do mundo"
     },
     {
+      slug: "africa",
       img: "/img/africa.jpg",
       title: "África",
       subtitle: "o berço da humanidade"
     },
     {
+      slug: "asia",
       img: "/img/asia.jpg",
       title: "Ásia",
       subtitle: "o maior dos continentes"
     },
     {
+      slug: "america",
       img: "/img/america.jpg",
       title: "Ámerica",
       subtitle: "América é subdividida em América do Norte, América do Sul e América Central"
     },
     {
+      slug: "oceania",
       img: "/img/oceania.jpg",
       title: "Oceania",
       subtitle: "composta por vários grupos de ilhas do Oceano Pacífico"
@@ -55,7 +62,12 @@ export const Carrousel = () => {
         modules={[Navigation, Pagination]}
         className="mySwiper">
         {continents.map((continent) => (
-          <SwiperSlide key={continent.title}>
+          <SwiperSlide
+            style={{
+              cursor: "pointer"
+            }}
+            key={continent.title}
+            onClick={() => router.push(`/continent/${continent.slug}`)}>
             <Slide img={continent.img} title={continent.title} subtitle={continent.subtitle} />
           </SwiperSlide>
         ))}

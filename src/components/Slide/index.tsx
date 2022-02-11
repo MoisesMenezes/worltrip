@@ -1,6 +1,7 @@
 import { Box, Heading, Image } from "@chakra-ui/react";
 
 export interface SlideProps {
+  slug?: string;
   img: string;
   title: string;
   subtitle: string;
