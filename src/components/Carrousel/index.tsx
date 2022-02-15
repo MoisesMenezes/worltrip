@@ -13,8 +13,8 @@ export const Carrousel = () => {
   const router = useRouter();
   const continents: SlideProps[] = [
     {
-      slug: "england",
-      img: "/img/england.jpg",
+      slug: "europe",
+      img: "/img/europe.jpg",
       title: "Europa",
       subtitle: "o continente mais antigo do mundo"
     },
@@ -31,10 +31,18 @@ export const Carrousel = () => {
       subtitle: "o maior dos continentes"
     },
     {
-      slug: "america",
-      img: "/img/america.jpg",
-      title: "Ámerica",
-      subtitle: "América é subdividida em América do Norte, América do Sul e América Central"
+      slug: "north-america",
+      img: "/img/north-america.jpg",
+      title: "Amérerica do Norte",
+      subtitle:
+        "A América do Norte produz grande parte dos alimentos consumidos no mundo. Trigo, milho, soja, feno, frutas."
+    },
+    {
+      slug: "south-america",
+      img: "/img/south-america.jpg",
+      title: "América do Sul",
+      subtitle:
+        "América do Sul abriga a maior diversidade física e climática de todos os continente"
     },
     {
       slug: "oceania",

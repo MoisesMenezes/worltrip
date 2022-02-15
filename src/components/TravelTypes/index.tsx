@@ -35,7 +35,6 @@ const TravelTypes = () => {
     base: false
   });
 
-  console.log("is", isWideVersion);
   return (
     <Grid
       as="ul"
