@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <Flex as="header" w="100%" h="100px" justifyContent="center">
       {asPath !== "/" && (
-        <Box fontSize="2.5rem" position="absolute" left="3%" top="3%">
+        <Box fontSize="2.5rem" position="absolute" left="3%" top="2%">
           <Link href="/" passHref>{`<`}</Link>
         </Box>
       )}
