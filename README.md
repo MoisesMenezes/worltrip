@@ -4,3 +4,5 @@
 [Site Preview](https://worltrip-six.vercel.app/)
 
 </div>
+
+By Moisés Menezes
