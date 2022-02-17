@@ -1,3 +1,5 @@
+![capa](/public/assets/capa.jpg)
+
 <div align="center"> 
    :construction:  Under construction  :construction:
 
