@@ -13,12 +13,13 @@ interface CardProps {
 
 const Card = ({ card }: CardProps) => {
   return (
-    <Box background="white" w="256px" h="279px" pos="relative" display="flex" flexDir="column">
+    <Box background="white" w="256px" h="300px" pos="relative" display="flex" flexDir="column">
       <Image
         borderRadius="4px 4px 0 0"
         w="266px"
         h="174px"
         objectFit="cover"
+        objectPosition="bottom"
         src={card.img}
         alt={card.place}
       />

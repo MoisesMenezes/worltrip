@@ -64,15 +64,9 @@ const Continent = ({ slug, statics, resume, formatCities }: ContinentProps) => {
             <Static value={statics.countries} label="países" />
             <Static value={statics.languages} label="línguas" />
             <Box display="flex" gap="0.3rem">
-              <Static value={statics.countries} label="cidades +100" />
+              <Static value={statics.cities} label="cidades +100" />
               <Tooltip label="As melhores cidade para se visitar" placement="bottom-end">
-                <ChakraImage
-                  src="/svg/info.svg"
-                  height="16px"
-                  width="16px"
-                  alignSelf="center"
-                  mb="35px"
-                />
+                <ChakraImage src="/svg/info.svg" height="16px" width="16px" mt="45%" />
               </Tooltip>
             </Box>
           </Box>

@@ -33,9 +33,8 @@ export const Carrousel = () => {
     {
       slug: "north-america",
       img: "/img/north-america.jpg",
-      title: "Amérerica do Norte",
-      subtitle:
-        "A América do Norte produz grande parte dos alimentos consumidos no mundo. Trigo, milho, soja, feno, frutas."
+      title: "América do Norte",
+      subtitle: "A América do Norte produz grande parte dos alimentos consumidos no mundo."
     },
     {
       slug: "south-america",
